@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="current-info">
+                <div class="date-container">
+                    <div class="time" id="time">
+                        12:30 <span id="am-pm">PM</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-ip">
+                            <input type="text" id="getCityInput" name="city" placeholder="Enter your city name">
+                        </div>
+                        <div class="col-btn">
+                            <button class="btn" onclick="getCurrentWeather()">Search</button>
+                        </div>
+                    </div>
+                    <div class="date" id="date">
+                        May 25, 2015 
+                    </div>
+                </div>
+                <div class="weather-temp-today">
+                    <div class="icon-description">
+                        <div class="icon" id="icon">
+                            <img src="favicon.png" alt="cloudy weather">
+                        </div>
+                        <div class="description" id="description">
+                            Cloudy Day
+                        </div>
+                    </div>
+                    <div class="avg-max-min-temp" id="avg-max-min-temp">
+                        <div class="avg-temp" id="avg-temp">
+                            72&#176;C
+                        </div>
+                        <div class="max-min">
+                            <span id="max-temp">81&#176;C</span>
+                            <span>/</span>
+                            <span id="min-temp">57&#176;C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="others" id="weather-description-today">
+                <div class="weather-item">
+                    <div>Humidity</div>
+                    <div>99%</div>
+                </div>
+                <div class="weather-item">
+                    <div>Pressure</div>
+                    <div>99%</div>
+                </div>
+                <div class="weather-item">
+                    <div>Wind Speed</div>
+                    <div>11 m/s</div>
+                </div>
+                <div class="weather-item">
+                    <div>Sunrise</div>
+                    <div>99%</div>
+                </div>
+                <div class="weather-item">
+                    <div>Sunset</div>
+                    <div>99%</div>
+                </div>
+            </div>
+        </div>
+        <div class="future-forecast">
+            <div class="today" id="current-temp">
+                <img src="favicon.png" alt="weather-icon" class="w-icon">
+                <div class="diff">
+                    <div class="day">Monday</div>
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+            </div>
+            <div class="weather-forecast" id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">TUE</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">            
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">WED</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">THU</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">FRI</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">SAT</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">SUN</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">MON</div>
+                    <img src="favicon.png" alt="weather-icon" class="w-icon">
+                    <div class="temp">Night: 23&#176;</div>
+                    <div class="temp">Day: 45&#176;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

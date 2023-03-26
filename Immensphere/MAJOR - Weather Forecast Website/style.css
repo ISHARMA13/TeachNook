@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, gray, blue, lightgreen);
+    font-family: sans-serif;
+    color: #fff;
+    padding: 50px;
+}
+
+.main-container {
+    background: url("tornado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+    padding: 50px 75px;
+}
+
+/* CSS for taking input */
+#row {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#row > .col-ip {
+    flex:auto;
+}
+
+#row > .col-btn {
+    width: 5rem;
+}
+
+.btn {
+    background-color: greenyellow;
+    border-radius: 4px;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    margin: 4px;
+    padding: 10px;
+}
+
+#getCityInput {
+    background-color: azure;
+    border-radius: 4px;
+    font-size: medium;
+    font-family: sans-serif;
+    margin: 4px;
+    padding: 10px;
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.location {
+    font-size: 30px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.date-container .time {
+    font-size: 50px;
+}
+
+.date-container #am-pm {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.date-container .date {
+    font-size: 15px;
+}
+
+.weather-temp-today {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(116, 109, 109, 0.4);
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+}
+
+.icon-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-description .icon {
+    padding: 10px 5px;
+}
+
+.icon-description .description {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.avg-max-min-temp {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.avg-temp {
+    padding-top: 50px;
+    font-size: 70px;
+}
+
+.max-min {
+    font-size: 20px;
+}
+
+#max-temp {
+    color: rgb(224, 61, 61);
+}
+
+#min-temp {
+    color: rgb(129, 129, 255);
+}
+
+.others{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    background-color: rgb(28, 29, 30, 0.7);
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 400px;
+}
+
+.weather-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.future-forecast {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: rgb(20, 18, 18, 0.3);
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.weather-forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-forecast-item {
+    padding: 20px 20px;
+    align-items: center;
+    background-color: rgba(44, 42, 42, 0.6);
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.weather-forecast-item .temp {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.weather-forecast-item .day {
+    font-size: 20px;
+    background-color: rgba(26, 23, 23, 0.66);
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.today {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(44, 42, 42, 0.7);
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px 30px;
+}
+
+.diff {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5px;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+}
+
+.diff .day {
+    font-size: 20px;
+    background-color: rgba(26, 23, 23, 0.66);
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.diff .temp {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.w-icon {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
